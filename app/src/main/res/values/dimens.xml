@@ -2,4 +2,53 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+
+
+    <!--主页图片尺寸-->
+    <dimen name="img_goods_width">110dp</dimen>
+    <dimen name="img_goods_height">90dp</dimen>
+    <!-- 微小号字体 -->
+    <dimen name="tiny">12sp</dimen>
+    <!-- 小号字体 -->
+    <dimen name="small">14sp</dimen>
+    <!-- 中号字体 -->
+    <dimen name="middle">16sp</dimen>
+    <!-- 大号字体 -->
+    <dimen name="large">18sp</dimen>
+    <!-- 标题字体 -->
+    <dimen name="biglarge">20sp</dimen>
+    <!--  封面字体大小 -->
+    <dimen name="cover_size">46sp</dimen>
+    <!--极细线-->
+    <dimen name="line_min">1px</dimen>
+    <dimen name="dimensional_paddtop">1dp</dimen>
+
+    <dimen name="home_title_paddingtop">10dp</dimen>
+
+
+    <dimen name="row_padding">12dp</dimen>
+    <dimen name="edittext_textsize">16sp</dimen>
+    <dimen name="widget_padding">10dp</dimen>
+    <!-- 通用的内边距 -->
+    <dimen name="padding_common">10dp</dimen>
+
+    <!-- 图片宽高 -->
+    <dimen name="image_widht_width">90dp</dimen>
+    <!-- 图片宽高 -->
+    <dimen name="image_widht_height">67dp</dimen>
+
+    <dimen name="common_edit_padding">4dp</dimen>
+
+
+    //button top button
+    <dimen name="btn_padding">15dp</dimen>
+    <dimen name="tv_select_padding">30dp</dimen>
+
+    <dimen name="city_sider_size">30dp</dimen>
 </resources>
