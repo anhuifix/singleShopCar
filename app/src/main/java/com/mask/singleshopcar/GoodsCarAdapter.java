@@ -10,6 +10,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.mask.singleshopcar.Model.GoodsModel;
 import com.mask.singleshopcar.Model.ShopCarModel;
 import com.mask.singleshopcar.Utils.CarUtrils;
@@ -23,7 +24,8 @@ import java.util.List;
 
 /**
  * 购物车数据适配器
- * @author  zhuangAH
+ *
+ * @author zhuangAH
  */
 public class GoodsCarAdapter extends BaseExpandableListAdapter {
 
@@ -31,7 +33,6 @@ public class GoodsCarAdapter extends BaseExpandableListAdapter {
     private Context context;
     private CheckGoodsListener checkInterface;
     private ModifyCountListener modifyCountInterface;
-
 
 
     /**
@@ -207,8 +208,15 @@ public class GoodsCarAdapter extends BaseExpandableListAdapter {
                 goodsViewHolder.layout_item_foot.setVisibility(View.GONE);
             }
             //设置基础数据
-            goodsViewHolder.ivAdapterListPic.setImageResource(R.mipmap.test2);
-            goodsViewHolder.ivAdapterListPic.setScaleType(ImageView.ScaleType.FIT_CENTER);
+            if (goodsInfo.getImageSrc() != null) {
+                Glide.with(context)
+                        .load(goodsInfo.getImageSrc())
+                        .centerCrop()
+                        .placeholder(R.mipmap.test2)
+                        .crossFade()
+                        .into(goodsViewHolder.ivAdapterListPic);
+            }
+
             goodsViewHolder.tvIntro.setText(goodsInfo.getName());
             goodsViewHolder.tvPrice.setText("￥ " + NumberUtils.formatRounded(goodsInfo.getPrice()));
             goodsViewHolder.tvBuyNum.setText("X " + NumberUtils.formatQty(goodsInfo.getQty()));

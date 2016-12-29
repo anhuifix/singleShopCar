@@ -267,7 +267,7 @@ public class ShopCarAvtivity extends BaseActivity implements CheckGoodsListener,
     public void checkGoodsBuy(ShopCarModel shopCarModel, double totalMonery, int totalCount) {
         if (shopCarModel.getGoodsModel() != null && shopCarModel.getGoodsModel().size() > 0) {
             //前往订单详情
-//            UIHelper.toCheckActivity(ShopCarAvtivity.this, totalMonery, totalCount, shopCarModel);
+            startActivity(new Intent(ShopCarAvtivity.this,GoodsDetailActivity.class));
         }
 
     }
