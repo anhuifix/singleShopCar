@@ -13,6 +13,8 @@ public class singleShopCarAppaction extends Application{
         super.onCreate();
 
 
+
+
         //图片
     }
 }
