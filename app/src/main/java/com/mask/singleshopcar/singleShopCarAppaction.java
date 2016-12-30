@@ -11,6 +11,8 @@ public class singleShopCarAppaction extends Application{
     @Override
     public void onCreate() {
         super.onCreate();
+
+
         //图片
     }
 }
