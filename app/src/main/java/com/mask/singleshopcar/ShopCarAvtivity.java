@@ -305,6 +305,7 @@ public class ShopCarAvtivity extends BaseActivity implements CheckGoodsListener,
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        //界面销毁的时候要清除数据
         goodsAdapter = null;
         shopCarModelList.clear();
     }
